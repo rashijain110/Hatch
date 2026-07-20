@@ -50,29 +50,27 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-24">
+    <section className="mx-auto max-w-[1256px] px-12 pt-20">
+        <div className="text-center mb-16">
+            <h2 className="text-[70px] font-black uppercase text-black">
+            MEET THE
+            </h2>
 
-      <div className="text-center">
-        <h2 className="text-[70px] font-black uppercase text-black">
-          MEET THE
-        </h2>
+            <h2 className="text-[82px] font-black uppercase italic text-[#5B3FE4] -mt-10">
+            HATCHERS
+            </h2>
+        </div>
 
-        <h2 className="text-[82px] font-black uppercase italic text-[#5B3FE4] -mt-10">
-          HATCHERS
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-3 ">
-        {teamMembers.map((member) => (
-          <TeamCard
-            key={member.name}
-            name={member.name}
-            role={member.role}
-            image={member.image}
-          />
-        ))}
-      </div>
-
-    </section>
+        <div className="flex flex-wrap justify-center gap-x-[120px]">
+            {teamMembers.map((member) => (
+            <TeamCard
+                key={member.name}
+                name={member.name}
+                role={member.role}
+                image={member.image}
+            />
+            ))}
+        </div>
+</section>
   );
 }

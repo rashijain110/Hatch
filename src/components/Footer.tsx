@@ -1,24 +1,24 @@
 import Image from "next/image";
 
 export default function Footer() {
-  return (
-    <footer className="relative bg-[#4E3FEB] overflow-hidden mt-20">
-      <div className="flex">
-        {/* Left Section */}
-        <div className=" ">
-            <Image
-                src="/image/Footer.png"
-                alt="Hatch Logo"
-                width={163}
-                height={156}
-                className="bg-white w-{223px} h-{239px}"
-            />
-            <h2 className="text-white text-{24px} font-semibold">
-              Find your people, Build your pods
-            </h2>
-        </div>
-      </div>
+    return (
+        <footer className="relative bg-[#4E3FEB] mt-20">
+            <div className="flex">
 
-    </footer>
-  );
-}
+                <div className=" ">
+                    <Image
+                        src="/image/Footer.png"
+                        alt="Hatch Logo"
+                        width={223}
+                        height={239}
+                        className="bg-[#F6FAFD]"
+                    />
+                    <h2 className="text-white text-[24px] font-semibold">
+                        Find your people, Build your pods
+                    </h2>
+                    <p className="text-[14px] text-white mt-6">© 2026 Hatch, All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+  ); 
+} 

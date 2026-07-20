@@ -29,7 +29,7 @@ export default function TeamCard({
 
       <div className="w-[180px]">
 
-        <h3 className="text-[#5B3FE4] text-{24px} font-medium">
+        <h3 className="text-[#5B3FE4] text{24px}">
           {name}
         </h3>
 
